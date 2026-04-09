@@ -1,0 +1,7 @@
+Group,Target,R2,CI_low,CI_hi
+G1_Rhythmic,valence,0.5467,0.4955,0.6154
+G1_Rhythmic,energy,0.6957,0.6593,0.7322
+G2_Classical,valence,0.5732,0.5086,0.6254
+G2_Classical,energy,0.9076,0.8937,0.923
+G3_HardRock,valence,0.4947,0.4495,0.5469
+G3_HardRock,energy,0.8373,0.8057,0.8627

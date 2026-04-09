@@ -1,0 +1,31 @@
+Group,Target,Model,PredictorSet,RMSE,MAE,R2,N_predictors
+G1_Rhythmic,valence,OLS,M1: Danceability only,0.1965,0.1607,-0,1
+G1_Rhythmic,valence,OLS,M2: Danceability + Energy,0.1984,0.1613,0.068,2
+G1_Rhythmic,valence,OLS,M3: Danceability + Energy + Acousticness,0.176,0.1416,0.1918,3
+G1_Rhythmic,valence,OLS,M4: All audio features,0.168,0.135,0.2854,8
+G1_Rhythmic,valence,OLS,M5: Audio + Popularity + Duration,0.1731,0.1366,0.2723,10
+G1_Rhythmic,energy,OLS,M1: Loudness only,0.1024,0.0806,0.4004,1
+G1_Rhythmic,energy,OLS,M2: Loudness + Acousticness + Instrumentalness,0.1005,0.0783,0.3921,3
+G1_Rhythmic,energy,OLS,M3: Tempo + Danceability + Liveness,0.1314,0.1045,5e-4,3
+G1_Rhythmic,energy,OLS,M4: All audio features,0.0888,0.0706,0.5261,8
+G1_Rhythmic,energy,OLS,M5: Audio + Popularity + Duration,0.0847,0.068,0.5822,10
+G2_Classical,valence,OLS,M1: Danceability only,0.1958,0.1514,0.2744,1
+G2_Classical,valence,OLS,M2: Danceability + Energy,0.1824,0.1407,0.3166,2
+G2_Classical,valence,OLS,M3: Danceability + Energy + Acousticness,0.1782,0.1361,0.3947,3
+G2_Classical,valence,OLS,M4: All audio features,0.1826,0.1375,0.36870000000000003,8
+G2_Classical,valence,OLS,M5: Audio + Popularity + Duration,0.1752,0.1343,0.4086,10
+G2_Classical,energy,OLS,M1: Loudness only,0.1302,0.0975,0.7218,1
+G2_Classical,energy,OLS,M2: Loudness + Acousticness + Instrumentalness,0.094,0.0715,0.8557,3
+G2_Classical,energy,OLS,M3: Tempo + Danceability + Liveness,0.219,0.1783,0.2159,3
+G2_Classical,energy,OLS,M4: All audio features,0.0876,0.065,0.8819,8
+G2_Classical,energy,OLS,M5: Audio + Popularity + Duration,0.0795,0.0594,0.8908,10
+G3_HardRock,valence,OLS,M1: Danceability only,0.2041,0.1685,0.1773,1
+G3_HardRock,valence,OLS,M2: Danceability + Energy,0.1964,0.1621,0.2243,2
+G3_HardRock,valence,OLS,M3: Danceability + Energy + Acousticness,0.1964,0.1609,0.2215,3
+G3_HardRock,valence,OLS,M4: All audio features,0.1872,0.1523,0.2737,8
+G3_HardRock,valence,OLS,M5: Audio + Popularity + Duration,0.1822,0.1505,0.2923,10
+G3_HardRock,energy,OLS,M1: Loudness only,0.1189,0.0908,0.4017,1
+G3_HardRock,energy,OLS,M2: Loudness + Acousticness + Instrumentalness,0.1122,0.0849,0.4864,3
+G3_HardRock,energy,OLS,M3: Tempo + Danceability + Liveness,0.1411,0.1085,0.1382,3
+G3_HardRock,energy,OLS,M4: All audio features,0.0901,0.0688,0.6751,8
+G3_HardRock,energy,OLS,M5: Audio + Popularity + Duration,0.101,0.0745,0.5946,10
