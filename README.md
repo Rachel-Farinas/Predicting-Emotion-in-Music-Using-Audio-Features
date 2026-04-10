@@ -11,12 +11,12 @@ This project implements a multi-model machine learning pipeline to predict the *
 ```text
 ├── main.R                     # The central controller; run this to execute the full pipeline
 ├── scripts/
-│   ├── setup.R             # Environment configuration, library loading, and helper functions
-│   ├── load_and_eda.R      # Data ingestion, cleaning, and Exploratory Data Analysis
-│   ├── modeling.R          # Model training (LR, KNN, RF, XGBoost, Stacked Ensembles)
-│   ├── performance.R       # Global accuracy metrics (R², RMSE, Heatmaps)
-│   ├── diagnostics.R       # Model health (Residuals, Q-Q plots, Error analysis)
-│   └── interpretability.R  # Feature importance, SHAP divergence, and PDP plots
+│   ├── setup.R                # Environment configuration, library loading, and helper functions
+│   ├── load_and_eda.R         # Data ingestion, cleaning, and Exploratory Data Analysis
+│   ├── modeling.R             # Model training (LR, KNN, RF, XGBoost, Stacked Ensembles)
+│   ├── performance.R          # Global accuracy metrics (R², RMSE, Heatmaps)
+│   ├── diagnostics.R          # Model health (Residuals, Q-Q plots, Error analysis)
+│   └── interpretability.R     # Feature importance, SHAP divergence, and PDP plots
 ├── data/                      # Raw and processed datasets (ignored by git if large)
 ├── plots/                     # Automatically generated visualizations (Plots 01-23)
 └── README.md                  # Project documentation
