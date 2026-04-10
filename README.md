@@ -1,7 +1,3 @@
-This README is designed to give your GitHub repository a professional, "industry-standard" feel. It clearly explains the architecture, the logic behind the modularization, and how a collaborator (or your future self) should navigate the project.
-
----
-
 # Predicting Emotion in Music Using Audio Features 🎧
 
 This project implements a multi-model machine learning pipeline to predict the **Valence** and **Energy** of music tracks across different genre groups. This repository features files dealing with data processing, model training, and advanced interpretability (SHAP/PDP).
