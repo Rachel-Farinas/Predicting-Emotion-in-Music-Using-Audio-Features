@@ -2,11 +2,24 @@
 
 This project implements a multi-model machine learning pipeline to predict the **Valence** and **Energy** of music tracks across different genre groups. This repository features files dealing with data processing, model training, and advanced interpretability (SHAP/PDP).
 
-Including a **Key Terminology** section is a smart move. It bridges the gap between the "Data Science" side (features/metrics) and the "Musicology" side (emotion/affect).
-
-Here is the section you can copy-paste directly into your **README.md**, ideally placed right after the **Project Structure** but before the **Workflow**.
-
 ---
+
+## 📂 Project Structure
+
+```text
+├── main.R                     # The central controller; run this to execute the full pipeline
+├── scripts/
+│   ├── setup.R                # Environment configuration, library loading, and helper functions
+│   ├── load_and_eda.R         # Data ingestion, cleaning, and Exploratory Data Analysis
+│   ├── modeling.R             # Model training (LR, KNN, RF, XGBoost, Stacked Ensembles)
+│   ├── performance.R          # Global accuracy metrics (R², RMSE, Heatmaps)
+│   ├── diagnostics.R          # Model health (Residuals, Q-Q plots, Error analysis)
+│   └── interpretability.R     # Feature importance, SHAP divergence, and PDP plots
+├── data/                      # Raw and processed datasets (ignored by git if large)
+├── plots/                     # Automatically generated visualizations (Plots 01-23)
+└── README.md                  # Project documentation
+
+```
 
 ## 📖 Key Terminology
 
@@ -36,23 +49,6 @@ These are the technical "ingredients" the model uses to predict emotion:
 * **Instrumentalness:** Predicts whether a track contains no vocals.
 * **Loudness:** The overall loudness of a track in decibels (dB).
 * **Speechiness:** Detects the presence of spoken words in a track.
-
-## 📂 Project Structure
-
-```text
-├── main.R                     # The central controller; run this to execute the full pipeline
-├── scripts/
-│   ├── setup.R                # Environment configuration, library loading, and helper functions
-│   ├── load_and_eda.R         # Data ingestion, cleaning, and Exploratory Data Analysis
-│   ├── modeling.R             # Model training (LR, KNN, RF, XGBoost, Stacked Ensembles)
-│   ├── performance.R          # Global accuracy metrics (R², RMSE, Heatmaps)
-│   ├── diagnostics.R          # Model health (Residuals, Q-Q plots, Error analysis)
-│   └── interpretability.R     # Feature importance, SHAP divergence, and PDP plots
-├── data/                      # Raw and processed datasets (ignored by git if large)
-├── plots/                     # Automatically generated visualizations (Plots 01-23)
-└── README.md                  # Project documentation
-```
-
 ---
 
 ## ⚙️ Workflow & Script Flow
