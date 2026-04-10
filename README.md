@@ -4,7 +4,7 @@ This README is designed to give your GitHub repository a professional, "industry
 
 # Predicting Emotion in Music Using Audio Features 🎧
 
-This project implements a multi-model machine learning pipeline to predict the **Valence** and **Energy** of music tracks across different genre groups. By modularizing the workflow, the project maintains a clear distinction between data processing, model training, and advanced interpretability (SHAP/PDP).
+This project implements a multi-model machine learning pipeline to predict the **Valence** and **Energy** of music tracks across different genre groups. This repository features files dealing with data processing, model training, and advanced interpretability (SHAP/PDP).
 
 ## 📂 Project Structure
 
