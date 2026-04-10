@@ -35,13 +35,6 @@ We utilize the **Russell Circumplex Model of Affect**, which maps musical emotio
     * *High Energy:* High intensity (excitement, chaos, tension).
     * *Low Energy:* Low intensity (calmness, lethargy, relaxation).
 
-### 2. Explainability Metrics
-Since we use "Black Box" models (like Random Forest and XGBoost), we use specific tools to "peek inside" and see how they make decisions.
-
-* **SHAP (SHapley Additive exPlanations):** A method based on game theory that assigns each feature a "contribution" score for a specific prediction. It tells us which features (e.g., *danceability*) pushed the predicted Valence up or down.
-* **PDP (Partial Dependence Plots):** These plots show the **marginal effect** of one or two features on the predicted outcome. They reveal if the relationship is linear (straight line) or complex (curves and plateaus).
-* **Feature Importance (%IncMSE):** Specific to Random Forest, this measures how much the model's accuracy drops if a specific feature is removed. It identifies the "heavy hitters" in the dataset.
-
 ### 3. Audio Features (Predictors)
 These are the technical "ingredients" the model uses to predict emotion:
 * **Acousticness:** A confidence measure of whether the track is acoustic.
