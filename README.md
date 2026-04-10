@@ -2,6 +2,41 @@
 
 This project implements a multi-model machine learning pipeline to predict the **Valence** and **Energy** of music tracks across different genre groups. This repository features files dealing with data processing, model training, and advanced interpretability (SHAP/PDP).
 
+Including a **Key Terminology** section is a smart move. It bridges the gap between the "Data Science" side (features/metrics) and the "Musicology" side (emotion/affect).
+
+Here is the section you can copy-paste directly into your **README.md**, ideally placed right after the **Project Structure** but before the **Workflow**.
+
+---
+
+## 📖 Key Terminology
+
+To understand the outputs of this model, it is helpful to define the core emotional and technical concepts used throughout the analysis.
+
+### 1. The Dimensional Model of Emotion
+We utilize the **Russell Circumplex Model of Affect**, which maps musical emotion onto a two-dimensional coordinate system rather than using simple labels like "happy" or "sad."
+
+* **Valence:** Represents the **perceived pleasantness** of the music. 
+    * *High Valence:* Positive emotions (joy, cheerfulness, serenity).
+    * *Low Valence:* Negative emotions (sadness, anger, depression).
+* **Energy (Arousal):** Represents the **intensity and activity** level of the track.
+    * *High Energy:* High intensity (excitement, chaos, tension).
+    * *Low Energy:* Low intensity (calmness, lethargy, relaxation).
+
+### 2. Explainability Metrics
+Since we use "Black Box" models (like Random Forest and XGBoost), we use specific tools to "peek inside" and see how they make decisions.
+
+* **SHAP (SHapley Additive exPlanations):** A method based on game theory that assigns each feature a "contribution" score for a specific prediction. It tells us which features (e.g., *danceability*) pushed the predicted Valence up or down.
+* **PDP (Partial Dependence Plots):** These plots show the **marginal effect** of one or two features on the predicted outcome. They reveal if the relationship is linear (straight line) or complex (curves and plateaus).
+* **Feature Importance (%IncMSE):** Specific to Random Forest, this measures how much the model's accuracy drops if a specific feature is removed. It identifies the "heavy hitters" in the dataset.
+
+### 3. Audio Features (Predictors)
+These are the technical "ingredients" the model uses to predict emotion:
+* **Acousticness:** A confidence measure of whether the track is acoustic.
+* **Danceability:** Describes how suitable a track is for dancing based on tempo, rhythm stability, and beat strength.
+* **Instrumentalness:** Predicts whether a track contains no vocals.
+* **Loudness:** The overall loudness of a track in decibels (dB).
+* **Speechiness:** Detects the presence of spoken words in a track.
+
 ## 📂 Project Structure
 
 ```text
